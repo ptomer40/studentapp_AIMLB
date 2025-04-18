@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Rahul",
+    "email": "tomer42@yahoo.com",
+    "password": 123456
+  },
+  {
+    "name": "Rahul",
+    "email": "tomer12@yahoo.com",
+    "password": 123456
+  },
+  {
+    "name": "Aatif",
+    "email": "aatif@yahoo.com",
+    "password": 123456
+  },
+  {
+    "name": "Ankit",
+    "email": "ptomer@yahoo.com",
+    "password": "java&fsd"
+  },
+  {
+    "name": "james",
+    "email": "ptomer49@yahoo.com",
+    "password": "java&fsd"
+  },
+  {
+    "name": "ptomer40@yahoo.com",
+    "email": "ptomer40@yahoo.com",
+    "password": "23456"
+  },
+  {
+    "name": "Ankit Kumar",
+    "email": "ptomer50@yahoo.com",
+    "password": "23456"
+  },
+  {
+    "name": "Ram Kumar",
+    "email": "tomer@abc.com",
+    "password": "12345"
+  },
+  {
+    "name": "Akira",
+    "email": "abc@yahoo.com",
+    "password": 12345
+  },
+  {
+    "name": "Ram",
+    "email": "ptomer44@yahoo.com",
+    "password": "123456"
+  },
+  {
+    "name": "Ram",
+    "email": "amit40@yahoo.com",
+    "password": 9091
+  },
+  {
+    "name": "Ankit",
+    "email": "ptomer42@yahoo.com",
+    "password": "12345"
+  }
+]
