@@ -8,7 +8,7 @@ e.preventDefault();
  const email=e.target.email.value;
  const password=e.target.password.value;
  //console.log(name+email+password);
-      const response=await fetch("http://localhost:3001/register",{
+      const response=await fetch("https://studentapp-aimlb.onrender.com/register",{
         method:"POST",
         body:JSON.stringify({name,email,password}),
         headers:{'Content-Type':'application/json'}

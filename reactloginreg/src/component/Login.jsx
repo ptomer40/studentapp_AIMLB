@@ -10,7 +10,7 @@ function Login() {
          const email=e.target.email.value;
          const password=e.target.password.value;
          //console.log(name+email+password);
-              const response=await fetch("http://localhost:3001/login",{
+              const response=await fetch("https://studentapp-aimlb.onrender.com/login",{
                 method:"POST",
                 body:JSON.stringify({email,password}),
                 headers:{'Content-Type':'application/json'}
