@@ -102,8 +102,10 @@ const data=await fs.readFile('student.json',{encoding:'utf-8'});
 })
 
 app.patch("/admin/updatebyid/:email",async(req,res)=>{
+
 const id=req.params.email;
 const {name,password}=req.body;
+console.log(name+password+id);
 let arr=[];
 const data=await fs.readFile('student.json',{encoding:'utf-8'});
  arr=JSON.parse(data);
@@ -111,7 +113,8 @@ const data=await fs.readFile('student.json',{encoding:'utf-8'});
  if(!status){
     res.json({message:"data not found to update"})
  }
- status.name="james";
+ status.name=name;
+ status.password=password;
  await fs.writeFile('student.json',JSON.stringify(arr,null,2));
  res.json({message:"data updated successfully"})
 })
