@@ -7,14 +7,14 @@ function StudentAdmin() {
       const sid= e.target.sid.value;
       //alert(sid)
       if(sid=='*'){
-      const response=await fetch("http://localhost:3001/admin/show");
+      const response=await fetch("https://studentapp-aimlb.onrender.com/admin/show");
            const res=await response.json();
 
            console.log(res.message);
            setAllData(res.message);
     }
     else{
-        const response=await fetch(`http://localhost:3001/admin/searchbyemail/${sid}`);
+        const response=await fetch(`https://studentapp-aimlb.onrender.com/admin/searchbyemail/${sid}`);
            const res=await response.json();
 
            console.log(res.message);
