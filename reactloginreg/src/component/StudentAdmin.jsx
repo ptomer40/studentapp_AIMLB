@@ -21,12 +21,20 @@ function StudentAdmin() {
            setAllData(Array.isArray(res.message)?res.message:[res.message]);// convert the data into array type if not
     }
 }
-function handleDelete(email){
-alert("delete"+email);
+async function handleDelete(email){
+    const response=await fetch(`https://studentapp-aimlb.onrender.com/admin/deletebyid//${email}`);
+           const res=await response.json();
+
+           console.log(res.message);
+          alert(res.message);
 }
 
-function handleUpdate(email){
-    alert("update"+email);
+async function handleUpdate(email){
+    const response=await fetch(`https://studentapp-aimlb.onrender.com/admin/updatebyid/${email}`);
+    const res=await response.json();
+
+    console.log(res.message);
+   alert(res.message);
 }
   return (
     <div>
