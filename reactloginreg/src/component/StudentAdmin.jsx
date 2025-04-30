@@ -6,7 +6,7 @@ function StudentAdmin() {
        e.preventDefault();
       const sid= e.target.sid.value;
       //alert(sid)
-      if(sid==='*'){
+      if(sid=='*'){
       const response=await fetch("http://localhost:3001/admin/show");
            const res=await response.json();
 

@@ -12,9 +12,9 @@ app.use(cors())// middleware
 app.get("/",(req,res)=>{
     try{
 //res.send("<h2>Welcome to Express Server</h2>");
-res.status(200).json({msg:"This is defualt end point"});
+res.status(200).json({message:"This is defualt end point"});
     }catch(err){
-        res.status(500).json({msg:err});
+        res.status(500).json({message:err});
     }
 })
 
@@ -44,7 +44,7 @@ app.post("/register",async(req,res)=>{
 //res.send("<h2>Welcome to Express Server</h2>");
 
     }catch(err){
-        res.status(500).json({msg:err});
+        res.status(500).json({message:err});
     }
 })
 app.post("/login",async(req,res)=>{
