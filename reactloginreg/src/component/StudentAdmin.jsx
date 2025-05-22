@@ -22,7 +22,7 @@ function StudentAdmin() {
     }
 }
 async function handleDelete(email){
-    const response=await fetch(`https://studentapp-aimlb.onrender.com/admin/deletebyid//${email}`);
+    const response=await fetch(`https://studentapp-aimlb.onrender.com/admin/deletebyid/${email}`);
            const res=await response.json();
 
            console.log(res.message);
